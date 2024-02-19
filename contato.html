@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport Edina" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles_contato.css">
+    <link rel="stylesheet" href="style_cabecalho.css">
+    <link rel="stylesheet" href="style_rodape.css">
+    <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id= "container-logo">
+            <div id = "logo">
+            <img src="./img/logo.jpg" alt="Logo mulherestech">
+            </div>
+        </div>
+        
+        <div id="container-titulo_e_nav">
+            
+            <div id= "titulo">
+            <h1>MULHERES TECH</h1>
+            </div>
+            
+            <nav> 
+                <a href="index.html">Home</a>
+                <a href="Inspire-se.html">Inspire-se</a>
+                <a href="Workplaces.html">Workplaces</a>
+                <a href="Cursos.html">Cursos</a>
+                <a href="#">Contato</a>
+            </nav>
+            
+        </div>
+    </header>
+    <style>
+        .error-message {
+            color: red;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            background-color: #d9d9d9;
+        }
+        .half-width {
+            width: 50%;
+            min-height: 600px;
+        }
+        /* Estilos para as cores */
+        .cor1 {
+            background: linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%);
+        }
+        .cor2 {
+            background:#F4F6FA;
+        }
+    </style>
+    <div class="container">
+        <div class="half-width cor1">
+            <div class="container3" style="padding-left: 10rem;">
+                <img src="./img/newletters.jpg" alt="Imagem 4">
+                <p class="paragrafo text-center" style="font-size: 20px; padding-left: 1rem;">
+                    <strong>
+                        Fique por dentro das últimas novidades, informações exclusivas e oportunidades incríveis na área de tecnologia.
+                        Para receber atualizações regulares, notícias empolgantes e nossa newsletter, inscreva-se agora!
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div class="half-width cor2">
+            <div style="flex: 1; padding-left: 12rem; padding-top: 9rem; margin-bottom: -11rem;">
+                <h2><strong>Cadastre-se</strong></h2> 
+                <form action="" onSubmit="validacao(event)">
+                    <div>
+                        <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                        <div id="nomeErro" class="error-message"></div>
+                    </div>
+                    <div>
+                        <input type="text" id="email" name="email" placeholder="Melhor E-mail">
+                        <div id="emailErro" class="error-message"></div>
+                    </div>
+                    <div>
+                        <input type="password" id="senha" name="senha" placeholder="Senha">
+                        <div id="senhaErro" class="error-message"></div>
+                    </div>
+                    <br><button class="btn-cadastro" type="submit" >Finalizar Cadastro</button></br>
+                    <div class="btndiv">
+                        <strong style="font-size: 15px;">Já tem Conta? </strong><a href="#" style="font-size: 15px;">Conecte-se</a>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+    <!-- <div style="display: flex; margin-bottom: 34rem; background-color:#F4F6FA">
+        <div style="flex: 1; background: linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%); width: 100%; padding-left: 10rem; padding-bottom: 12rem;">
+            <div class="container3" style="padding-left: 10rem;">
+                <img src="./img/newletters.jpg" alt="Imagem 4">
+                <p class="paragrafo text-center" style="font-size: 20px; padding-left: 1rem;">
+                    <strong>
+                        Fique por dentro das últimas novidades, informações exclusivas e oportunidades incríveis na área de tecnologia.
+                        Para receber atualizações regulares, notícias empolgantes e nossa newsletter, inscreva-se agora!
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div style="flex: 1; background:#F4F6FA; padding-left: 20rem; padding-top: 2rem; margin-bottom: -11rem;">
+            <img src="./img/newletters.jpg" alt="Imagem 4" style="padding-left: 20rem;">
+            <div class="container3">
+                <p class="paragrafo text-center" style="font-size: 20px; padding-left: 1rem;">
+                    <strong>
+                        Fique por dentro das últimas novidades, informações exclusivas e oportunidades incríveis na área de tecnologia.
+                        Para receber atualizações regulares, notícias empolgantes e nossa newsletter, inscreva-se agora!
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div style="flex: 1; background:#F4F6FA; padding-left: 8rem; padding-top: 2rem; margin-bottom: -11rem;">
+            <h2><strong>Cadastre-se</strong></h2> 
+            <form action="" onSubmit="validacao(event)">
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                    <div id="nomeErro" class="error-message"></div>
+                </div>
+                <div>
+                    <input type="text" id="email" name="email" placeholder="Melhor E-mail">
+                    <div id="emailErro" class="error-message"></div>
+                </div>
+                <div>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <div id="senhaErro" class="error-message"></div>
+                </div>
+                <br><button class="btn-cadastro" type="submit" >Finalizar Cadastro</button></br>
+                <div class="btndiv">
+                    <strong style="font-size: 15px;">Já tem Conta? </strong><a href="#" style="font-size: 15px;">Conecte-se</a>
+                </div>
+            </form>
+        </div>
+    </div> -->
+    <footer>
+        <div id="contato">
+            <span>Contato</span>
+             <ul>
+                <li>Contato@mulherestech.com.br></li>
+                <li>Phone: (xx)xxxx-xxxx</li>
+                <li>Mobile: (xx) xxxxx-xxxx</li>   
+            </ul>
+        </div>
+        <div id="midias_sociais">
+            <span>Mídias Sociais</span> 
+            
+            <div id="icones">
+                <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="twitter" href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </div>
+        </div>   
+    </footer>
+</body>
+<script>
+function validacao(event) {
+    event.preventDefault()
+
+    var nome = document.getElementById("nome").value;
+    var senha = document.getElementById("senha").value;
+    var email = document.getElementById("email").value;
+    var nomeErro = document.getElementById("nomeErro");
+    var emailErro = document.getElementById("emailErro");
+    var senhaErro = document.getElementById("senhaErro");
+
+    // Resetar mensagens de erro
+    nomeErro.style.display = "none";
+    nomeErro.innerText = "";
+    emailErro.style.display = "none";
+    emailErro.innerText = "";
+    senhaErro.style.display = "none";
+    senhaErro.innerText = "";
+
+    if (nome.trim() === '') {
+        nomeErro.innerText = "Por favor, insira seu nome de usuário.";
+        nomeErro.style.display = "block";
+    }
+    if (email.trim() === '') {
+        emailErro.innerText = "Por favor, insira seu E-mail.";
+        emailErro.style.display = "block";
+    }
+    if (senha.trim() === '') {
+        senhaErro.innerText = "Por favor, insira sua senha.";
+        senhaErro.style.display = "block";
+    }
+}
+</script>
+
+</html>
+<!-- Edina -->

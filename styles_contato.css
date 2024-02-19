@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.text-container {
+    flex-grow: 1; /* Allow the text container to grow and take up remaining space */
+}
+
+.text-up,
+.text-down {
+    /* Add styling for the text elements as needed */
+    margin: 0; /* Remove default margins */
+}
+.text-title {
+    background-color: #87439299;
+    color: white;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+
+    font-family: Roboto;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 18px; /* Edina */
+    letter-spacing: 0em;  
+    text-align: left;
+}
+.nav {
+    background-color: #516E9C;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.textlink {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 6cm;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+    text-indent: 20ch;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.p9-rem {
+    padding-left: 9rem;
+}
+/* Edina */
+.text-home {
+    padding-left: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container-ins {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.contato {
+    list-style: none; color:#B78EBD; font-size: 20px; font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo {
+    color:#B78EBD;
+    padding-top: 2rem; padding-left: 2rem; /* Edina */
+    font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.icon {
+    padding-right: 2rem;
+}
+
+body {
+    margin: 0px;
+}
+
+.text-blue {
+    margin-left: 7rem; font-size: 22px; color: rgb(24, 70, 170); font-weight: bold;
+}
+
+.container3 {
+    max-width: 45rem; /* Defina o tamanho máximo do contêiner */
+    margin-left: 20rem;
+}
+  
+.paragrafo {
+    word-wrap: break-word; /* Para suporte a navegadores mais antigos */
+    text-align: justify; /* Justifica o texto */ /* Edina */
+    margin: 0; /* Remove margens */ 
+    padding: 0; /* Remove preenchimento */
+    line-height: 1.2; /* Espaçamento entre linhas */
+    display: inline; /* Para remover o espaço extra no início */
+  }
+
+  .text-inspire {
+    margin-left: 7rem;
+    font-size: 22px;
+    color: #516E9C;
+    font-family: sans-serif;line-height: 2rem;font-size: 33px;
+  }
+
+  input[type=text],input[type=password]{
+    width: 50%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .btn-cadastro {
+    width: 50%;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 0px 3.2215874195098877px 3.2215874195098877px 0px #00000040;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px; /* Edina */
+    background: #516E9CDB; 
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn-cadastro:hover {
+    background: #6180b3db;
+  }
+
+  .btndiv > a {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+}

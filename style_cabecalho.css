@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+  }
+    
+header{
+    display:flex ;
+      
+}
+
+#container-titulo_e_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+#titulo{
+    background-color: #b78ebd;
+    width: 100%;
+    height: 6rem;
+   
+}
+
+#logo
+{
+    width: 12rem;
+    height: 11rem;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 6rem;
+    height: 6rem;
+    background-color: #6982aa;
+    width: 100%;
+    color: white;
+   
+   
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+h1{ 
+   
+    color:white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 2rem 0 4rem; 
+    
+
+}
+
+
+
+
+/* #b78ebd - cor lilas do cabeçalho */
+/* 6982aa - cor azul do cabeçalho */

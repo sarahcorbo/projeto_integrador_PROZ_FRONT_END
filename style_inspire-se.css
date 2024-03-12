@@ -9,20 +9,25 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin:30px 100px 50px 100px;  
+
 }
 section{
     width: 100%;
-    height:80vh;
+    height:75vh;
     display:flex;
     justify-content: center;
     align-items: center;
     
 }
 
+
+
 h3{
     font-size: 22px;
     color: rgb(96, 96, 99);
-    width: 40%;
+    width: 50%;
+    margin-bottom: 10px;
     
    
 }
@@ -45,13 +50,9 @@ h3{
 }
 p{
     font-size: 17px;
-    padding: auto;
     color: rgb(96, 96, 99);
 }
 
-main{
-    margin:30px 100px 50px 100px;    
-}
 
 .slider{
     margin:0 auto;
@@ -60,11 +61,22 @@ main{
     overflow: hidden;
 } 
 
+@media screen and (max-width: 1500px) {
+  main{ display: block;
+   
+  }
+  section{
+    margin-top: -30px;
+  }
+
+}
+
+
 .slides{
-    width: 400%;
+    /* width: 800%; */
     height: 400px;
     display: flex;
-
+ 
 }
 
 .slides input {
@@ -72,7 +84,7 @@ main{
 }
 
 .slide{
-    width: 25%;
+    /* width:12.5%; */
     position: relative;
     display: flex;
     border: 2px solid rgb(199, 173, 204);
@@ -83,6 +95,7 @@ main{
    padding: 20px;
    text-align: justify;
    font-weight: bold;
+   padding-bottom: 8px;
 }
 
 .slide img{
@@ -115,21 +128,41 @@ main{
     background-color:  #b78ebd;
 }
 
-#radio1:checked ~ .first{
+
+
+/* #radio1:checked ~ .first{
     margin-left:0;
 }
 
 #radio2:checked ~ .first{
-    margin-left:-25%;
+    margin-left:-12.5%;
 }
 
 #radio3:checked ~ .first{
-    margin-left:-50%;
+    margin-left:-25%;
 }
 
 #radio4:checked ~ .first{
+    margin-left:-37.5%;
+}
+
+#radio5:checked ~ .first{
+    margin-left:-50%;
+}
+
+#radio6:checked ~ .first{
+    margin-left:-62.5%;
+}
+
+#radio7:checked ~ .first{
     margin-left:-75%;
 }
+
+#radio8:checked ~ .first{
+    margin-left:-87.5%;
+} */
+
+
 
 .navigation-auto div{
     border: 3px solid  #b78ebd;
@@ -151,7 +184,16 @@ main{
 .navigation-auto div:not(:last-child){
     margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
+
+.navigation-auto:first-child{
+    background-color: #b78ebd;
+}
+
+input[type="radio"]:checked + .manual-btn {
+    background-color: #b78ebd;
+}
+
+/* #radio1:checked ~ .navigation-auto .auto-btn1{
     background: #b78ebd;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
@@ -163,6 +205,18 @@ main{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #b78ebd;
 }
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #b78ebd;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #b78ebd;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #b78ebd;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background: #b78ebd;
+} */
 
 
 
